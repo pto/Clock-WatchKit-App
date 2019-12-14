@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		550CE94A23A465FF0086C5C2 /* Clock WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 550CE94923A465FF0086C5C2 /* Clock WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		550CE94A23A465FF0086C5C2 /* Clock.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 550CE94923A465FF0086C5C2 /* Clock.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		550CE95023A465FF0086C5C2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550CE94E23A465FF0086C5C2 /* Interface.storyboard */; };
 		550CE95223A466030086C5C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 550CE95123A466030086C5C2 /* Assets.xcassets */; };
 		550CE95923A466030086C5C2 /* Clock WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 550CE95823A466030086C5C2 /* Clock WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -52,7 +52,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				550CE94A23A465FF0086C5C2 /* Clock WatchKit App.app in Embed Watch Content */,
+				550CE94A23A465FF0086C5C2 /* Clock.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,7 +61,7 @@
 
 /* Begin PBXFileReference section */
 		550CE94523A465FF0086C5C2 /* Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		550CE94923A465FF0086C5C2 /* Clock WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clock WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		550CE94923A465FF0086C5C2 /* Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		550CE94F23A465FF0086C5C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		550CE95123A466030086C5C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		550CE95323A466030086C5C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				550CE94523A465FF0086C5C2 /* Clock.app */,
-				550CE94923A465FF0086C5C2 /* Clock WatchKit App.app */,
+				550CE94923A465FF0086C5C2 /* Clock.app */,
 				550CE95823A466030086C5C2 /* Clock WatchKit Extension.appex */,
 			);
 			name = Products;
@@ -159,7 +159,7 @@
 			);
 			name = "Clock WatchKit App";
 			productName = "Clock WatchKit App";
-			productReference = 550CE94923A465FF0086C5C2 /* Clock WatchKit App.app */;
+			productReference = 550CE94923A465FF0086C5C2 /* Clock.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		550CE95723A466030086C5C2 /* Clock WatchKit Extension */ = {
@@ -451,7 +451,7 @@
 				IBSC_MODULE = Clock_WatchKit_Extension;
 				INFOPLIST_FILE = "Clock WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = me.pto.Clock.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Clock;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -470,7 +470,7 @@
 				IBSC_MODULE = Clock_WatchKit_Extension;
 				INFOPLIST_FILE = "Clock WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = me.pto.Clock.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Clock;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
