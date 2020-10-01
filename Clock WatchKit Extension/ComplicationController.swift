@@ -75,12 +75,10 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     func getComplicationTemplate(for complication: CLKComplication, using date: Date) -> CLKComplicationTemplate? {
         switch complication.family {
         case .circularSmall:
-            let template = CLKComplicationTemplateCircularSmallSimpleText()
             let df = DateFormatter()
             df.dateFormat = "d"
             let d = df.string(from: date)
-            template.textProvider = CLKSimpleTextProvider(text: d, shortText: d)
-            return template
+            return CLKComplicationTemplateCircularSmallSimpleText(textProvider: CLKSimpleTextProvider(text: d, shortText: d))
         default:
             return nil
         }
