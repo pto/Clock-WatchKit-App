@@ -12,7 +12,7 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Clock" customModuleProvider="target">
                     <items>
                         <dateLabel alignment="center" verticalAlignment="center" textAlignment="center" numberOfLines="4" id="bCF-vf-ErX">
-                            <color key="textColor" red="0.80293367346938771" green="1" blue="0.9408801020408164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" red="0.85356640819999996" green="0.94737309219999999" blue="0.87072747949999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
                             <string key="format">EEE'
 'MMM d'
