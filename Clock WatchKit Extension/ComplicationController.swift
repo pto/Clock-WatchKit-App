@@ -102,7 +102,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             return CLKComplicationTemplateUtilitarianSmallFlat(textProvider: CLKSimpleTextProvider(text: d, shortText: d))
         case .utilitarianLarge:
             let df = DateFormatter()
-            df.dateFormat = "EEEE MMMM d"
+            df.dateFormat = "EEE MMM d"
             let d = df.string(from: date)
             return CLKComplicationTemplateUtilitarianLargeFlat(textProvider: CLKSimpleTextProvider(text: d, shortText: d))
         default:
