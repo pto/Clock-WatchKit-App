@@ -15,7 +15,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
 
     func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void) {
         let descriptors = [
-            CLKComplicationDescriptor(identifier: "complication", displayName: "Clock", supportedFamilies: [CLKComplicationFamily.circularSmall])
+            CLKComplicationDescriptor(identifier: "complication", displayName: "Clock", supportedFamilies: [CLKComplicationFamily.circularSmall, CLKComplicationFamily.utilitarianSmall, CLKComplicationFamily.utilitarianLarge])
             // Multiple complication support can be added here with more descriptors
         ]
         
@@ -95,6 +95,16 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             df.dateFormat = "d"
             let d = df.string(from: date)
             return CLKComplicationTemplateCircularSmallSimpleText(textProvider: CLKSimpleTextProvider(text: d, shortText: d))
+        case .utilitarianSmall:
+            let df = DateFormatter()
+            df.dateFormat = "EEE d"
+            let d = df.string(from: date)
+            return CLKComplicationTemplateUtilitarianSmallFlat(textProvider: CLKSimpleTextProvider(text: d, shortText: d))
+        case .utilitarianLarge:
+            let df = DateFormatter()
+            df.dateFormat = "EEEE MMMM d"
+            let d = df.string(from: date)
+            return CLKComplicationTemplateUtilitarianLargeFlat(textProvider: CLKSimpleTextProvider(text: d, shortText: d))
         default:
             return nil
         }
